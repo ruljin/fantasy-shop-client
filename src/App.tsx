@@ -1,8 +1,8 @@
 import styles from "./App.module.css";
-import { WelcomePage } from "./welcome";
+import { Routes } from "./routes/routes";
 
 export const App = () => (
   <div className={styles.app}>
-    <WelcomePage />
+    <Routes />
   </div>
 );
