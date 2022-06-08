@@ -1,1 +1,8 @@
-export const WelcomePage = () => <div>Welcome Page</div>;
+import { Page } from "../../components";
+import { WelcomeCard } from "../components/WelcomeCard";
+
+export const WelcomePage = () => (
+  <Page>
+    <WelcomeCard />
+  </Page>
+);
