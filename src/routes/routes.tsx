@@ -4,11 +4,12 @@ import {
   Routes as Switch,
 } from "react-router-dom";
 
+import { ShopPage } from "../shop";
 import { WelcomePage } from "../welcome";
 
 const ROUTES = [
   { path: "/", element: <WelcomePage /> },
-  { path: "/shop", element: <div>Test</div> },
+  { path: "/shop", element: <ShopPage /> },
 ];
 
 export const Routes = () => (
