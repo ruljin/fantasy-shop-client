@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { ReactNode } from "react";
 
 import styles from "./Card.module.css";
@@ -7,10 +8,11 @@ import { Header } from "./components/Header";
 
 type CardProps = {
   children: ReactNode;
+  className?: string;
 };
 
-export const Card = ({ children }: CardProps) => (
-  <div className={styles.card}>{children}</div>
+export const Card = ({ children, className }: CardProps) => (
+  <div className={clsx(styles.card, className)}>{children}</div>
 );
 
 Card.Header = Header;
